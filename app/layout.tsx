@@ -1,0 +1,83 @@
+import type { Metadata } from "next";
+import {
+  getStructuredData,
+  siteUrl,
+} from "@/lib/seo";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://changwongoyangibunyang.vercel.app"),
+  title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
+  description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
+  keywords: ["창원고양이분양", "창원 고양이", "창원 냥이 분양", "창원 반려묘", "고양이분양 창원"],
+  authors: [{ name: "창원고양이분양" }],
+  creator: "창원고양이분양",
+  publisher: "창원고양이분양",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    url: "https://changwongoyangibunyang.vercel.app",
+    siteName: "창원고양이분양",
+    title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
+    description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
+    images: [{ url: "/https://changwongoyangibunyang.vercel.app/images/landing/changwongoyangibunyang/\uba54\uc778\ucfe4\ubd84\uc591KakaoTalk_20260509_154040995_13.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
+    description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
+    images: ["/https://changwongoyangibunyang.vercel.app/images/landing/changwongoyangibunyang/\uba54\uc778\ucfe4\ubd84\uc591KakaoTalk_20260509_154040995_13.jpg"],
+  },
+  alternates: {
+    canonical: "https://changwongoyangibunyang.vercel.app",
+  },
+  category: "창원고양이분양",
+  verification: {
+    other: {
+      "naver-site-verification": "PENDING",
+    },
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const structuredData = getStructuredData();
+
+  return (
+    <html lang="ko">
+      <head>
+        <meta name="naver-site-verification" content="PENDING" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          as="style"
+          crossOrigin="anonymous"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+      </head>
+      <body className="font-sans pb-safe-floating lg:pb-0">{children}</body>
+    </html>
+  );
+}
