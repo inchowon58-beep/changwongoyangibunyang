@@ -6,13 +6,13 @@ import {
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://changwongoyangibunyang.vercel.app"),
+  metadataBase: new URL("https://changwoncat.dmcmusic.co.kr"),
   title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
   description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
-  keywords: ["창원고양이분양", "창원 고양이", "창원 냥이 분양", "창원 반려묘", "고양이분양 창원"],
-  authors: [{ name: "창원고양이분양" }],
-  creator: "창원고양이분양",
-  publisher: "창원고양이분양",
+  keywords: ["https://changwoncat.dmcmusic.co.kr/"],
+  authors: [{ name: "https://changwoncat.dmcmusic.co.kr/" }],
+  creator: "https://changwoncat.dmcmusic.co.kr/",
+  publisher: "https://changwoncat.dmcmusic.co.kr/",
   robots: {
     index: true,
     follow: true,
@@ -20,25 +20,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://changwongoyangibunyang.vercel.app",
-    siteName: "창원고양이분양",
+    url: "https://changwoncat.dmcmusic.co.kr",
+    siteName: "https://changwoncat.dmcmusic.co.kr/",
     title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
     description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
-    images: [{ url: "/https://changwongoyangibunyang.vercel.app/images/landing/changwongoyangibunyang/\uba54\uc778\ucfe4\ubd84\uc591KakaoTalk_20260509_154040995_13.jpg" }],
+    images: [{ url: "/images/landing-01.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "창원고양이분양, 건강하고 사랑스러운 반려묘 만남의 시작!",
     description: "창원 지역에서 건강하고 사랑스러운 고양이를 찾고 계신가요? 다양한 묘종, 철저한 건강 관리, 믿을 수 있는 창원고양이분양 전문점에서 새로운 가족을 만나보세요.",
-    images: ["/https://changwongoyangibunyang.vercel.app/images/landing/changwongoyangibunyang/\uba54\uc778\ucfe4\ubd84\uc591KakaoTalk_20260509_154040995_13.jpg"],
+    images: ["/images/landing-01.jpg"],
   },
   alternates: {
-    canonical: "https://changwongoyangibunyang.vercel.app",
+    canonical: "https://changwoncat.dmcmusic.co.kr",
   },
-  category: "창원고양이분양",
+  category: "https://changwoncat.dmcmusic.co.kr/",
   verification: {
     other: {
-      "naver-site-verification": "PENDING",
+      "naver-site-verification": "5568181adff0a16c61caec60ce3165f5e69406f0",
     },
   },
 };
@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <meta name="naver-site-verification" content="PENDING" />
+        <meta name="naver-site-verification" content="5568181adff0a16c61caec60ce3165f5e69406f0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
